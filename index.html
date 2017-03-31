@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Codija">
+    <meta name="description" content="Project made as practice for the MDN learning program.">
+    <title>Mint</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="tabs">
+                <a href="https://www.mint.com/"><img src="img/mint_logo.png" alt="Mint logo" class="logo"></a>
+                <button class="tablinks" onclick="openTab(event, 'logIn')">Log in</button>
+                <button class="tablinks bor" onclick="openTab(event, 'signIn')" id="defaultOpen">Sign up</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="signIn" class="tabcontent">
+                <div class="col-left">
+                    <h1 class="loging">See all your finances in one <br>place &amp; create a budget</h1>
+                    <form action="#">
+                        <fieldset>
+                            <label class="inp-label">Your Email</label>
+                            <input class="inp-text" type="email" name="Email" required="required">
+                        </fieldset>
+                        <fieldset>
+                            <label class="inp-label">Confirm Email</label>
+                            <input class="inp-text">
+                        </fieldset>
+                        <fieldset>
+                            <label class="inp-label">Phone (recommended)</label>
+                            <input class="inp-text" type="tel">
+                            <p><small>Standard call, messaging or data rates may apply.</small></p>
+                        </fieldset>
+                        <fieldset class="field">
+                            <label class="inp-label">Password</label>
+                            <input class="inp-text" type="password" required="required">
+                            <img src="img/icon-lock.svg" class="secure" alt="Lock-pich icon">
+                        </fieldset>
+                        <fieldset>
+                            <label class="inp-label">Confirm Password</label>
+                            <input class="inp-text" type="password" required="required">
+                        </fieldset>
+                        <input type="checkbox" class="inp-check">
+                        <p class="remember">Remember me</p>
+                        <button class="signUp" type="submit" name="SignUp"><img src="img/icon-whitelock.png" class="img-btn" alt="Lock-pich icon">SIGN UP</button>
+                        <p class="left-footer"><small>By clicking Sign Up you agree to our <a href="https://www.mint.com/terms">Terms of Use </a>and <a href="https://www.mint.com/privacy">Privacy Statement</a></small></p>
+                    </form>
+                </div>
+                <div class="col-right">
+                    <aside>
+                        <h2 class="aside-head">Why you'll love it</h2>
+                        <ul class="aside-li">
+                            <li>See all your accounts in one place</li>
+                            <li>Set a budget and pay down your debt</li>
+                            <li>Find the best ways to grow your money</li>
+                            <li>Stay <a href="http://www.mint.com/privacy/" class="liA">safe and secure</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="logIn" class="tabcontent">
+                <div class="col-left">
+                    <h1 class="loging">Log in to Mint</h1>
+                    <form action="#">
+                        <fieldset>
+                            <label class="inp-label">Email or User ID</label>
+                            <input class="inp-text" type="email" name="Email" required="required">
+                        </fieldset>
+                        <fieldset>
+                            <label class="inp-label">Confirm Password</label>
+                            <input class="inp-text" name="Password" type="password" required="required">
+                        </fieldset>
+                        <input type="checkbox" class="inp-check">
+                        <p class="remember">Remember me</p>
+                        <button class="signUp" type="submit" name="SignIn"><img src="img/icon-whitelock.png" class="img-btn" alt="Lock-pich icon">LOG IN</button>
+                        <p class="left-footer"><small>By clicking Sign Up you agree to our <a href="">Terms of Use </a>and <a href="">Privacy Statement</a></small></p>
+                        <p><a href="#" class="right-a">I forgot my user ID or password</a></p>
+                    </form>
+                </div>
+                <div class="col-right-e">
+                    <aside class="col-right-text">
+                        <h4 class="right-text">Don't have an account?</h4>
+                        <a href="#">Sign up now for free</a>
+                        <h4 class="right-text-r">Forgot your password?</h4>
+                        <a href="#">Reset it here</a>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul class="footer-nav">
+                <li>Support</li>
+                <li>Terms of use</li>
+                <li>Privacy</li>
+                <li>Legal and Trademark Notices</li>
+                <li class="remove-br">About Intuit</li>
+            </ul>
+
+            <p class="footer-text">Mint bill pay services provided by Intuit Payments Inc. under applicable <a href="#">licenses.</a></p>
+            <figure>
+                <img src="img/getseal.gif" class="img-footer" alt="Norton secured icon">
+                <img src="img/truste.svg" class="img-footer-r" alt="TRUSTe company icon">
+            </figure>
+
+            <p class="footer-text-last"><small>&copy; 2017 Intuit, Inc.  |  ph7625.3 - spa100.11</small></p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
